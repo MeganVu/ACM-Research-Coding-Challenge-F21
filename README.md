@@ -30,3 +30,6 @@ Submissions will be evaluated holistically and based on a combination of effort,
 
 Regardless if you can or cannot answer the question, provide a short explanation of how you got your solution or how you think it can be solved in your README.md file. However, we highly recommend giving the challenge a try, you just might learn something new!
 
+## Solution
+The value returned by this program is a sentiment score. In the documentation for the library used, the polarity score is between -1 and 1 where 1 is the most positive and -1 is the most negative. This matches the description that was given in the instructions. Since the score was around 0.21 or 20%, it means that the text was somewhat positive, but close to neutral. Since the text had a mix of words with positive and negative connotations, I expected the text to be about as close to neutral as it was. In order to solve this, I used the documentation for TextBlob, a library designed for NLP. I originally searched for libraries related to sentiment analysis. Most of the results inolved training a model, but this would involve finding a training data set with similar context to the actual data. Since I was unable to find a training set specific for this purpose, it was better to use a library that did not require training of the model. TextBlob had a feature that served this purpose, so it is what I used.
+
